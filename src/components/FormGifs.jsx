@@ -1,16 +1,16 @@
 
-const FormGifs = () => {
- 
-    const handleChange=(n)=>{
-        console.log(n.target.value)
+const FormGifs = ({changeKeyword}) => {
+     
+    const handleSubmit=(e)=>{
+        e.preventDefault()
+        changeKeyword(e.target.search.value)
     }
-
+ 
     return (
-        <>
-        <form >
-            <label htmlFor="search"></label>
-            <input onChange={(e)=> handleChange(e)} name="search" type="text" />
-             <button>Search</button>
+        < >
+        <form onSubmit={(e)=>handleSubmit(e)} className="container__search">
+            <input  name="search" type="text" />
+             <button type="submit"><i className="fas fa-search"></i></button>
         </form>
         </>
     )

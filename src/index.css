@@ -12,6 +12,42 @@ body {
 #title {
   color:#FF6666;
 }
+.App {
+  text-align: center;
+}
+
+.container__search{
+  background: #F0F0F0;
+  width: 350px;
+  margin: auto;
+  border-radius: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+input {
+  outline: none;
+  padding: 20px;
+  width: 250px;
+  border:none;
+  border-radius: 50px;
+}
+button {
+  background:#FF6666;
+  outline: none;
+  border: none;
+  width: 70px;
+  cursor: pointer;
+}
+button i {
+  font-size: 20px;
+}
+
+.loading {
+    margin-top: 100px;
+    width: 100px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
